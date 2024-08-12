@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>sketch.js</title>
+</head>
+<body>
+    <div id="viewport">
+
+        <div id="gridContainer">
+        </div> 
+        
+        <div id="controlPanel">
+            <h1>sketch.js</h1>
+            <div id="line"></div>    
+            
+            <div id="settingsContainer">
+                <div class="settingSeparator">
+                    <label for="canvasResolution">Canvas Resolution</label><br>
+                    <input type="number" id="canvasResolution" value="64" min="16" max="512">
+                    <button id="canvasResolutionButton">Apply</button>
+                </div>
+            
+                <br>
+                
+                <div class="settingSeparator">                
+                    <label for ="penColor"> Pen Hexcode </label><br>
+                    <input type="text" style="width: 100px;">
+                    <button id="penColorButton">Apply</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
