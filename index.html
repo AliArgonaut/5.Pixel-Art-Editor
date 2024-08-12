@@ -18,18 +18,33 @@
             
             <div id="settingsContainer">
                 <div class="settingSeparator">
-                    <label for="canvasResolution">Canvas Resolution</label><br>
-                    <input type="number" id="canvasResolution" value="64" min="16" max="512">
-                    <button id="canvasResolutionButton">Apply</button>
+                    <label for = 'pixelSize'>Pixel Size</label><br>
+                    <input type="number" id="pixelSizeInput">
                 </div>
-            
-                <br>
                 
+                <div class="settingSeparator">
+                    <label for="canvasHeight">Canvas Height</label><br>
+                    <input type="number" id="canvasHeightInput">
+                </div>
+                
+                <div class="settingSeparator">
+                    <label for="canvasWidth">Canvas Width</label><br>
+                    <input type="number" id="canvasWidthInput">
+                </div>
+                
+                <div class="settingSeparator">
+                    <label for = "pixelNumber">Pixel Density</label><br>
+                    <input type="number" id="pixelNumberInput">
+                </div>
+                </div>      
+               
                 <div class="settingSeparator">                
                     <label for ="penColor"> Pen Hexcode </label><br>
-                    <input type="text" style="width: 100px;">
-                    <button id="penColorButton">Apply</button>
+                    <input type="color" id="penColorInput" >
                 </div>
+                
+                <button>Apply</button>
+                <button>Clear</button>
 
 
             </div>

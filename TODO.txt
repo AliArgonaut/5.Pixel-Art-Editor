@@ -1,1 +1,2 @@
 1. make the 50px value in gridrows and columns in app.js a variable that is also plugged into the .gridPixel height and width properties in styles.css
+2. add user input for rows, columns, pixel size, and pixel number 
