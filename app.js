@@ -4,8 +4,8 @@ const gridContainer = document.getElementById('gridContainer');
 const gridPixel = "<div class = 'gridPixel'> </div>"
 
 
-const gridRows = '50px '.repeat(139).trim(); 
-const gridColumns = '50px '.repeat(139).trim();
+const gridRows = '50px '.repeat(20).trim(); 
+const gridColumns = '50px '.repeat(27).trim();
 
 gridContainer.style.gridTemplateRows = gridRows; 
 
@@ -17,4 +17,4 @@ function createGrid(gridNum) {
     } 
 }
 
-createGrid(16);
+createGrid(459);
