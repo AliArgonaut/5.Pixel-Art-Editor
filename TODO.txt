@@ -1,2 +1,3 @@
 1. make the 50px value in gridrows and columns in app.js a variable that is also plugged into the .gridPixel height and width properties in styles.css
-2. add user input for rows, columns, pixel size, and pixel number 
+2. add functions when you hit clear and apply
+3. add hover effect to canvas to change color of div to pen color  
