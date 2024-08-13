@@ -1,14 +1,10 @@
 const gridContainer = document.getElementById('gridContainer');
-
-
 const gridPixel = "<div class = 'gridPixel' > </div>"
-
-
 const gridRows = '20px '.repeat(66).trim(); 
 const gridColumns = '20px '.repeat(50).trim();
+let selectedColor = 'black' 
 
 gridContainer.style.gridTemplateRows = gridRows; 
-
 gridContainer.style.gridTemplateColumns = gridColumns;
 
 function createGrid(gridNum) {
@@ -32,7 +28,7 @@ function clearGrid(gridNum) {
     gridPixels.forEach((pixel) => {
         pixel.addEventListener('click', () => {
             console.log('grid pixel clicked');
-            pixel.style.backgroundColor = "black";
+            pixel.style.backgroundColor = selectedColor;
         });
     });
     
@@ -40,4 +36,19 @@ function clearGrid(gridNum) {
 }
 
 clearGrid(1730);
+
+
+applyButton.addEventListener('click', () => {
+
+    selectedColor = document.getElementById('penColorInput').value;
+    const gridPixels = document.querySelectorAll('.gridPixel');
+    gridPixels.forEach((pixel) => {
+        pixel.addEventListener('click', () => {
+            console.log('grid pixel clicked');
+            pixel.style.backgroundColor = selectedColor;
+        });
+    });
+    
+
+});
 
