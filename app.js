@@ -4,8 +4,8 @@ const gridContainer = document.getElementById('gridContainer');
 const gridPixel = "<div class = 'gridPixel' > </div>"
 
 
-const gridRows = '50px '.repeat(20).trim(); 
-const gridColumns = '50px '.repeat(27).trim();
+const gridRows = '20px '.repeat(66).trim(); 
+const gridColumns = '20px '.repeat(50).trim();
 
 gridContainer.style.gridTemplateRows = gridRows; 
 
@@ -19,19 +19,25 @@ function createGrid(gridNum) {
 
 
 
-createGrid(459);
-
-function clearGrid() {
-    gridContainer.innerHTML = ''; 
-   createGrid(459)
-    console.log('clear') 
-}
-
 const gridPixels = document.querySelectorAll('.gridPixel'); 
 
-gridPixels.forEach((pixel) => {
-    pixel.addEventListener('click', () => {
-        pixel.style.backgroundColor = 'black';
-    })
-})
+gridNum = 1800
+
+function clearGrid(gridNum) {
+    gridContainer.innerHTML = '';  // Clear the grid
+    createGrid(gridNum);           // Recreate the grid
+    
+    // Reattach event listeners to the new grid pixels
+    const gridPixels = document.querySelectorAll('.gridPixel');
+    gridPixels.forEach((pixel) => {
+        pixel.addEventListener('click', () => {
+            console.log('grid pixel clicked');
+            pixel.style.backgroundColor = "black";
+        });
+    });
+    
+    console.log('clear');
+}
+
+clearGrid(1730);
 

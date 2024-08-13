@@ -13,7 +13,7 @@
         </div> 
         
         <div id="controlPanel">
-            <h1>sketch.js</h1>
+            <h1>sketch<span id="dotJS">.js</span></h1>
             <div id="line"></div>    
             
             <div id="settingsContainer">
@@ -42,10 +42,10 @@
                     <label for ="penColor"> Pen Hexcode </label><br>
                     <input type="color" id="penColorInput" >
                 </div>
-                
-                <button>Apply</button>
-                <button onclick= 'clearGrid()''>Clear</button>
-
+               <div id="lastButtonContainer">
+                <button id="applyButton">Apply</button>
+                <button id="clearButton" onclick= 'clearGrid(gridNum)''>Clear</button>
+</div> 
 
             </div>
         </div>
