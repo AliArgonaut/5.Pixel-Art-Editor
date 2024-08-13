@@ -1,7 +1,7 @@
 const gridContainer = document.getElementById('gridContainer');
 
 
-const gridPixel = "<div class = 'gridPixel'> </div>"
+const gridPixel = "<div class = 'gridPixel' > </div>"
 
 
 const gridRows = '50px '.repeat(20).trim(); 
@@ -17,4 +17,21 @@ function createGrid(gridNum) {
     } 
 }
 
+
+
 createGrid(459);
+
+function clearGrid() {
+    gridContainer.innerHTML = ''; 
+   createGrid(459)
+    console.log('clear') 
+}
+
+const gridPixels = document.querySelectorAll('.gridPixel'); 
+
+gridPixels.forEach((pixel) => {
+    pixel.addEventListener('click', () => {
+        pixel.style.backgroundColor = 'black';
+    })
+})
+
